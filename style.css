@@ -1,24 +1,29 @@
 .entries {
-  margin-top: 100px;
+  margin-top: 190px;
 }
-
 .entry {
   margin: 5px;
   border: 1px solid black;
   padding-bottom: 5px;
-   background-color: #E7E7E8;
-   
-   font-family: 'Roboto', sans-serif;
+  background-color: #E7E7E8;
+  font-family: 'Roboto', sans-serif;
 }
-
 .entry-title {
   margin-top: -5px;
 }
-
 .entry-title h3 {
   font-size: 2rem;
 }
-
+.search-box {
+  margin-bottom: 20px;
+}
+.search-box .col-xs-4 {
+  margin-left: -20px;
+}
 body {
+  padding-top: 100px;
   background-color: #092B40;
+}
+h1, h4 {
+  color: #E7E7E8;
 }
