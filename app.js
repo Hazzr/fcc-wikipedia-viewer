@@ -1,8 +1,8 @@
 var api = 'http://en.wikipedia.org/w/api.php?format=json&action=query&generator=search&gsrnamespace=0&gsrlimit=10&prop=pageimages|extracts&pilimit=max&exintro&explaintext&exsentences=1&exlimit=max&gsrsearch=';
 var cb = '&callback=JSON_CALLBACK';
 
-$(document).ready(function() {
-  $('#search-form').submit(function(e) {
+$(document).ready(function () {
+  $('#search-form').submit(function (e) {
     loadResults($('#search-text').val());
     e.preventDefault();
   });
@@ -33,7 +33,7 @@ function loadResults(searchString) {
     contentType: "application/json",
     dataType: 'jsonp',
     success: displayResults,
-    error: function(e) {
+    error: function (e) {
       console.log(e.message);
     }
   });
